@@ -1,0 +1,245 @@
+/* HEADER */
+.overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #292E49, #536976);
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+.menu{
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 99;
+    transition: 1s linear;
+}
+.menu .container{
+    display: flex;
+    align-items: baseline;
+}
+.nav{
+    margin-left: 8rem;
+    width: 80%;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    color: black;
+   
+}
+.menu__item{
+    padding: 2.5rem 2rem;
+}
+.menu__item:last-child{
+    margin-left: auto;
+    
+}
+.menu__link{
+    color: white;
+    transition: 0.5s linear;
+}
+h1{
+    color: white;
+}
+.menu__link:hover{
+    color: #2EB888 ;
+}
+.header__content{
+    background-image: url(../images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    padding-top: 20%;
+}
+.logo{
+    font-size: 25px;
+    margin-left: -2rem;
+    min-width: 20%;
+}
+.header__content .container{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.header__title{
+    color: #f0f0f0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    letter-spacing: 4px;
+}
+.header__decs{
+    color: white;
+    font-size: 4rem;
+    font-weight: lighter;
+    margin-bottom: 5rem;
+    line-height: 5.5rem;
+}
+.header__form{
+    display: flex; width: 100%;
+    justify-content: center;
+    position: relative;
+}
+.header__input{
+   position: absolute;
+   left: 20%;
+   width: 60%;
+   height: 50px;
+   border-radius: 50px;
+   border: 0;
+   font-size: 13px;
+   padding-left: 2rem;
+}
+
+.btn__start{
+  position: absolute;
+  right: 20%;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #2EB888;
+  color: white;
+  width: 20%;
+  border: 0.1px;
+}
+.btn__start:hover{
+    background-color: black;
+}
+.color-black{
+    color:#575757;
+}
+.color-black:hover{
+    color:#2EB888;
+}
+
+.menu__collapse{
+    display: none;
+}
+.menu__close{
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1010px) {
+    .logo{
+       font-size: 20px;
+       width:"";
+    }
+    .container{
+        padding: 0 3rem;
+    }
+    .nav{
+        padding-left: auto;
+        padding-right: 0;
+        width:"";
+        margin-left: auto;
+    }
+    .menu__item{
+        padding: 2rem 1rem;
+    }
+    .menu__link{
+        font-size: 15px;
+    }
+    .menu__item:last-child{ 
+        margin-left: auto;
+    }
+    .header__form{
+        width: 100%;
+    }
+    .header__content .container{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .header__content{
+        min-height: 70rem;
+        padding-top: 30%;
+        width: 100%;
+    }
+    .nav{
+        /* display: none; */
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        z-index: 999;
+        background-color: white;
+        border-left: 1px solid #f2f2f2;
+        min-width: 20rem;
+        transition: transform 0.25s linear;
+        will-change: transform;
+        transform: translateX(100%);
+    }
+    .header .nav.is-open {
+        transform: translateX(0);
+      }
+    .menu__list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .menu__item:last-child{
+        margin-left: 0;
+    }
+    .header__content .container{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .menu__collapse{
+        display: block;
+        margin-left: auto;
+        font-size: 30px;
+        color: #2EB888;
+        cursor: pointer;
+    }
+    .menu__close{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        color: #2EB888;
+    }
+    .menu__link{
+        color: #575757;
+    }
+}
+@media screen and (max-width: 767px){
+    .header__content{
+        padding-top: 35%;
+    }
+    .header__decs{
+        font-size: 30px ;
+    }
+    .header__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__input{
+        position: inherit;
+        left: 0;
+        padding: 0 ;
+        text-align: center;
+    }
+    .btn__start{
+        margin-top: 10px;
+        position: inherit;
+        left: 0;
+        width: 60%;
+    }
+   
+}

@@ -1,0 +1,108 @@
+.contact{
+    padding: 10rem 0;
+    background-color: white;
+}
+.form__input, .form-btn{
+    width: 33%;
+    margin-left: 2rem;
+}
+.form-textarea{
+    width: 100%;
+}
+.contact__form div{
+    display: flex;
+    align-content: space-between;
+    margin-left: -2rem;
+}
+.form__input{
+    border: 0;
+    border-bottom: 3px solid #F0F0F0;
+    padding: 1.5rem 2rem;
+    font-size: 16px;
+}
+.form-btn{
+    height: 45px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #2EB888;
+    color: white;
+    border: 0.1px;
+    padding: 0 1rem;
+    width: 50%;
+    margin-left: auto;
+    font-size: 16px;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+.form-btn:hover{
+    background-color: black;
+}
+.form-textarea{
+    border: 0;
+    border-bottom: 3px solid #F0F0F0;
+    padding: 1.5rem 2rem;
+    font-size: 16px;
+}
+.form__input:focus, .form-textarea:focus{
+    border-bottom: 3px solid black;
+}
+/* FOOTER */
+
+.footer{
+    display: flex;
+    margin-top: 4rem;
+    align-items: baseline;
+}
+.footer__social{
+    margin-left: auto;
+}
+.footer__social{
+    display: flex;
+    align-items: center;
+}
+.footer__social-item{
+    margin-left: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+    transition:  0.5s linear;
+}
+.footer__social-item:hover{
+    color: white;
+    background-color: #2f4b45;
+}
+@media screen and (max-width: 767px){
+    .form-btn{
+        font-size: 13px;
+        width: 31%;
+        padding: 0 0;
+    }
+    .form__input{
+        font-size: 13px;
+        padding: 1.5rem 0.5rem;
+    }
+    .form-textarea{
+        font-size: 13px;
+        padding: 0 0.5rem;
+    }
+    .form__input, .form-btn{
+        margin-left: 0.5rem;
+    }
+    .contact__form div{
+        margin-left: -0.5rem;
+    }
+}
+@media screen and (max-width: 583px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer__social{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer span{
+        margin-left: auto;
+        margin-right: auto; 
+        font-size: 14px;
+    }
+}

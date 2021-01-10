@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangdingPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+   <div class="wrapper">
+    <header class="header" id="home">
+        
+        <div class="menu" id="menu">
+            <div class="container">
+                <a href="#home" class="menu__item logo"> <h1 id="logo">Soft Landing</h1> </a>
+                <div class="nav">
+                    <i class="fas fa-times menu__close"></i>
+                    <ul class="menu__list">
+                        <!-- <li class="menu__item logo">
+                            <a href="#home" > <h1 id="logo"     >Soft Landing</h1> </a>
+                        </li> -->
+                        <li class="menu__item">
+                            <a href="#home" class="menu__link" > Home </a>
+                        </li>
+                        <li class="menu__item" >
+                            <a href="#features" class="menu__link" > Features </a>
+                        </li>
+                        <li class="menu__item" >
+                            <a href="#about" class="menu__link" > About Us</a>
+                        </li>
+                        <li class="menu__item" >
+                            <a href="#price" class="menu__link" > Pricing </a>
+                        </li>
+                        <li class="menu__item" >
+                            <a href="#contact" class="menu__link" > Contact </a>
+                        </li>
+                        <li class="menu__item" >
+                            <a href="#home" class="menu__link" > vanloi1501@gmail.com </a>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars menu__collapse"></i>
+            </div>
+        </div>  
+         
+        <div class="header__content">
+            <div class="overlay"></div> 
+            <div class="container">
+                <h2 class="header__title">
+                    Professional landing page
+                </h2>
+                <p class="header__decs">
+                    We help you manage your website successfully!
+                </p>
+                <div class="header__form">
+                    <input type="email" name="email" class="header__input" placeholder="Enter your email" required="">
+                    <button type="submit" class="btn__start">Get started</button>
+               </div>
+            </div>
+        </div>   
+    </header>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+       <div class="container">
+        <div class="featurse__content">
+            <h2 class="feature__title">What you get</h2>
+            <div class="feature__tab">
+                <button class="tablink active">Responsive</button>
+                <button class="tablink">Mobile</button>
+                <button class="tablink">Support</button>
+            </div>
+            <div id="Responsive" class="tabcontent">
+                <h2 class="content__title">Minimal Design</h2>
+                <p class="content__decs">Nam feugiat a ante sollicitudin luctus. 
+                    Quisque eget placerat massa. Ut quis ligula ornare, pellentesque velit eget, vestibulum est. 
+                    Donec pretium tristique elit eget sodales.
+                     Pellentesque posuere.
+                </p>
+                <h2 class="content__title">Easy to use</h2>
+                <p class="content__decs">Aliquam massa massa, consectetur non mattis fringilla, sodales ac turpis. 
+                    Morbi ac felis sagittis, faucibus mauris vitae, placerat mauris.
+                </p>
+            </div>
+            <div id="Mobile" class="tabcontent">
+                <h2 class="content__title">Compatible Browsers</h2>
+                <p class="content__decs">Nam maximus elit a metus luctus, a faucibus magna mattis. Ut malesuada viverra iaculis. Nunc euismod sit amet neque a tincidunt.</p>
+                <h2 class="content__title">User Friendly</h2>
+                <p class="content__decs">Maecenas maximus velit lorem, quis pharetra turpis fringilla id. Vestibulum tempor facilisis efficitur. Sed nec nisi sit amet nibh pellentesque elementum./p;
+                </p>
+                <h2 class="content__title">HTML5 & CSS3</h2>
+                <p class="content__decs">In viverra ipsum ornare sapien rhoncus ullamcorper. Vivamus vitae risus ac mi vehicula sagittis. Nulla dictum magna sit amet pharetra aliquam.</p>
+            </div>
+            <div class="tabcontent" id="Support">
+                <h2 class="content__title">Quick Support</h2>
+                <p class="content__decs">Mauris rutrum est at fringilla pulvinar. Nam ligula urna, lobortis non scelerisque vel, molestie eu massa. Nullam mattis elit at tortor accumsan.</p>
+                <h2 class="content__title">Managed Stuffs</h2>
+                <p class="content__decs">Quisque ullamcorper sem quis sapien cursus efficitur. Sed id sodales ipsum. Morbi eleifend tempus erat sit amet vehicula. Nulla at posuere tellus, non mattis erat. Nulla id massa gravida.</p>
+            </div>
+        </div>
+        <div class="features__img">
+            <img src="./images/feature-mockup.png" alt="">
+        </div>
+       </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="about__title">Professional Team for you</h2>
+            <div class="about__team">
+                <ul class="team__list">
+                    <li class="team__item">
+                        <img src="./images/team-image1.jpg" alt="" class="team__img">
+                        <div class="team__info">
+                            <h3 class="team__name">
+                                Andrew Orange
+                            </h3>
+                            <h3 class="team__position">
+                                Art Director
+                            </h3>
+                            <p class="team__decs">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <img src="./images/team-image2.jpg" alt="" class="team__img">
+                        <div class="team__info">
+                            <h3 class="team__name">
+                                Catherine Soft
+                            </h3>
+                            <h3 class="team__position">
+                                Senior Manager
+                            </h3>
+                            <p class="team__decs">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="team__item">
+                        <img src="./images/team-image3.jpg" alt="" class="team__img">
+                        <div class="team__info">
+                            <h3 class="team__name">
+                                Jack Wilson
+                            </h3>
+                            <h3 class="team__position">
+                                CEO / Founder
+                            </h3>
+                            <p class="team__decs">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- QOUTES -->
+    <section id="qoutes">
+        <div class="container">
+        <div class="qoute">
+            
+                <div class="qoute__img">
+                    <img src="./images/testimonial-image.jpg" alt="">
+                </div>
+                <div class="qoute__content">
+                    <h2 class="qoute__title">What People Say</h2>
+                    <div class="qoute__slide">
+                        <div class="slide__item mySlides fade">
+                            <p class="slide__decs">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                 Dignissimos nulla repellendus perferendis? Repellendus, ipsa esse!</p>
+                            <div class="slide__info">
+                                <img src="./images/tst-image1.jpg" alt="" class="slide__info-img" style="display: inline-block;">
+                                <span class="slide__info-name">Michael</span>
+                            </div>
+                        </div>
+                        <div class="slide__item mySlides fade">
+                            <p class="slide__decs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas pariatur aliquam nisi cupiditate, fugit numquam.</p>
+                            <div class="slide__info">
+                                <img src="./images/tst-image2.jpg" alt="" class="slide__info-img" style="display: inline-block;">
+                                <span class="slide__info-name">Leona</span>
+                            </div>
+                        </div>
+                        <div class="slide__item mySlides fade">
+                            <p class="slide__decs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                A cupiditate cum ut ipsa dolorem sapiente, repudiandae id ullam veritatis eaque.</p>
+                            <div class="slide__info">
+                                <img src="./images/tst-image3.jpg" alt="" class="slide__info-img" style="display: inline-block;">
+                                <span class="slide__info-name">Yasou</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICE -->
+    <section id="price" class="price">
+        <div class="container">
+             <h2 class="price__titile feature__title">
+                 Choose your plan
+             </h2>
+             <ul class="price__list">
+                 <li class="price__item">
+                     <h3 class="price__item-title">Student</h3>
+                     <div class="price__item-info">
+                         <p>20 Responsive Designs </p>
+                         <p>10 Dashboards</p>
+                         <p>1 TB Storage</p>
+                         <p>6 TB Bandwidth</p>
+                         <p>24-hour Support</p>
+                     </div>
+                     <div class="price__item-bottom">
+                         <span class="price__cost">$200/mo</span>
+                         <button class="price__btn">Register Now</button>
+                     </div>
+                 </li>
+                 <li class="price__item">
+                    <h3 class="price__item-title">Business</h3>
+                    <div class="price__item-info">
+                        <p>50 Responsive Designs </p>
+                        <p>30 Dashboards</p>
+                        <p>2 TB Storage</p>
+                        <p>12 TB Bandwidth</p>
+                        <p>15-minute Support</p>
+                    </div>
+                    <div class="price__item-bottom">
+                        <span class="price__cost">$350/mo</span>
+                        <button class="price__btn">Register Now</button>
+                    </div>
+                </li>
+                <li class="price__item">
+                    <h3 class="price__item-title">Professional</h3>
+                    <div class="price__item-info">
+                        <p>100 Responsive Designs </p>
+                        <p>60 Dashboards</p>
+                        <p>5 TB Storage</p>
+                        <p>25 TB Bandwidth</p>
+                        <p>1-minute Support</p>
+                    </div>
+                    <div class="price__item-bottom">
+                        <span class="price__cost">$550/mo</span>
+                        <button class="price__btn">Register Now</button>
+                    </div>
+                </li>       
+             </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="price__titile feature__title">
+                Say hello to us
+            </h2>
+            <div class="form">
+                <form action="" class="contact__form">
+                    <div>
+                        <input type="text" class="form__input" placeholder="Full name" name="name" required="">
+                        <input type="text" class="form__input" placeholder="Email address" name="name" required="">
+                        <input type="submit" class="form-btn" name="send message" value="Send Message">
+                    </div>
+                    <br>
+                    <textarea class="form-textarea" rows="8" placeholder="Your message" name="message" required=""></textarea>
+                </form>
+            </div>
+            <div class="footer">
+                <span>Copyright © 2021 LeVanLoi - Design: Tooplate</span>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                      <i class="fab fa-facebook"></i>
+                    </li>
+                    <li class="footer__social-item">
+                      <i class="fab fa-instagram"></i>
+                    </li>
+                    <li class="footer__social-item">
+                      <i class="fab fa-twitter"></i>
+                    </li>
+                    <li class="footer__social-item">
+                      <i class="fab fa-google"></i>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+   </div>
+    <script src="./js/fixed-nav.js"></script>
+    <script src="./js/tab-content.js"></script>
+    <script src="./js/collapse-nav.js"></script>
+    <script src="./js/qoute-slide.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+            });
+        });
+    </script>
+    <script>
+        gsap.from('.featurse__content',{
+            opacity:0.5,
+            duration: 1.5,
+            y: -200,
+            scrollTrigger: ".trigger"
+        })
+        gsap.from('.feature__title',{
+            opacity:0.5,
+            duration: 1.5,
+            delay: 0.5,
+            x: -200,
+            scrollTrigger: ".trigger"
+        })
+        gsap.from('.tabcontent',{
+            opacity:0.5,
+            duration: 1.5,
+            delay: 0.5,
+            x: 200,
+            scrollTrigger: ".trigger"
+        })
+        gsap.from('.features__img',{
+            opacity:0.5,
+            duration: 1.5,
+            y: 200,
+            scrollTrigger: ".trigger"
+        })
+        
+    </script>
+</body>
+
+</html>
