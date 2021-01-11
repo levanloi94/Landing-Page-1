@@ -12,6 +12,7 @@
 }
 .featurse__content{
     width: 50%;
+    transition: 1s linear;
 }
 .feature__title{
     font-size: 42px;

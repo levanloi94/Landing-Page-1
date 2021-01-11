@@ -2,6 +2,13 @@
     padding: 10rem 0;
     background-color: white;
 }
+.contact__title{
+    text-align: center;
+    font-size: 42px;
+    color: #333333;
+    font-weight: lighter;
+    margin-bottom: 6rem;
+}
 .form__input, .form-btn{
     width: 33%;
     margin-left: 2rem;

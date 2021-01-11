@@ -1,9 +1,15 @@
 .price{
     background-color: #F9F9F9;
     padding: 10rem 0;
+    
 }
-.price__titile{
+.price__title{
     text-align: center;
+    font-size: 42px;
+    color: #333333;
+    font-weight: lighter;
+    margin-bottom: 6rem;
+   
 }
 .price__list{
     display: flex;

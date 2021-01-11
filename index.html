@@ -54,13 +54,13 @@
         <div class="header__content">
             <div class="overlay"></div> 
             <div class="container">
-                <h2 class="header__title">
+                <h2 class="header__title anim1">
                     Professional landing page
                 </h2>
-                <p class="header__decs">
+                <p class="header__decs anim1">
                     We help you manage your website successfully!
                 </p>
-                <div class="header__form">
+                <div class="header__form anim1">
                     <input type="email" name="email" class="header__input" placeholder="Enter your email" required="">
                     <button type="submit" class="btn__start">Get started</button>
                </div>
@@ -215,7 +215,7 @@
     <!-- PRICE -->
     <section id="price" class="price">
         <div class="container">
-             <h2 class="price__titile feature__title">
+             <h2 class="price__title ">
                  Choose your plan
              </h2>
              <ul class="price__list">
@@ -268,7 +268,7 @@
     <!-- CONTACT -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="price__titile feature__title">
+            <h2 class="contact__title">
                 Say hello to us
             </h2>
             <div class="form">
@@ -333,34 +333,7 @@
             });
         });
     </script>
-    <script>
-        gsap.from('.featurse__content',{
-            opacity:0.5,
-            duration: 1.5,
-            y: -200,
-            scrollTrigger: ".trigger"
-        })
-        gsap.from('.feature__title',{
-            opacity:0.5,
-            duration: 1.5,
-            delay: 0.5,
-            x: -200,
-            scrollTrigger: ".trigger"
-        })
-        gsap.from('.tabcontent',{
-            opacity:0.5,
-            duration: 1.5,
-            delay: 0.5,
-            x: 200,
-            scrollTrigger: ".trigger"
-        })
-        gsap.from('.features__img',{
-            opacity:0.5,
-            duration: 1.5,
-            y: 200,
-            scrollTrigger: ".trigger"
-        })
-        
+    <script src="./js/gsap-scroll.js">
     </script>
 </body>
 
