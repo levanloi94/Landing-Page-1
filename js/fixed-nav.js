@@ -8,7 +8,7 @@ function scrollFunction() {
         if (document.body.onscrollTop>200 || document.documentElement.scrollTop > 200) {
             document.getElementById("menu").style.backgroundColor = "white";
             document.getElementById("menu").style.boxShadow = " 0 0 14px 14px rgba(0, 0, 0, 0.04)";
-            document.getElementById("logo").style.color="black";
+            document.getElementById("logo").style.color="#2EB888";
             document.querySelector('.back-to-top').style.display = "flex";
             arr = menuLink[j].className.split(" ");
             if( arr.indexOf(name) == -1){

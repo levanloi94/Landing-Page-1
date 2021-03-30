@@ -1,6 +1,6 @@
 /* HEADER */
 .overlay{
-    content: "";
+    /* content: ""; */
     position: absolute;
     top: 0;
     left: 0;
@@ -21,28 +21,20 @@
 }
 .menu .container{
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
 }
-.nav{
-    margin-left: 8rem;
-    width: 80%;
-}
+
 .menu__list{
     display: flex;
     align-items: center;
-    color: black;
-   
 }
 .menu__item{
     padding: 2.5rem 2rem;
 }
-.menu__item:last-child{
-    margin-left: auto;
-    
-}
 .menu__link{
     color: white;
-    transition: 0.5s linear;
+    transform: .5s linear;
 }
 h1{
     color: white;
@@ -53,12 +45,14 @@ h1{
 .header__content{
     background-image: url(../images/home-bg.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     min-height: 100vh;
     position: relative;
     text-align: center;
     z-index: 0;
-    padding-top: 18rem;
+    padding-top: 20%;
 }
 .logo{
     font-size: 25px;
@@ -166,6 +160,9 @@ h1{
     
 }
 @media screen and (max-width: 768px){
+    .right-menu{
+        display: none;
+    }
     .header__content{
         min-height: 70rem;
         padding-top: 30%;
