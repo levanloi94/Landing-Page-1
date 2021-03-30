@@ -78,6 +78,20 @@
     color: white;
     background-color: #2f4b45;
 }
+
+.back-to-top{
+    border-radius: 10px;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 99;
+    font-size: 4rem;
+    background-color: #2EB888;
+    color: white;
+    /* padding: 0.5rem; */
+    display: none;
+}
+
 @media screen and (max-width: 767px){
     .form-btn{
         font-size: 13px;
